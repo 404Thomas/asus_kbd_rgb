@@ -1,0 +1,5 @@
+# Permite acesso ao controlador RGB do teclado (ITE5570) sem privilégios de root.
+# Usuários do grupo "input" podem ler/escrever no /dev/hidraw correspondente.
+#
+# Instale com:  sudo make udev   (ou copie este arquivo para /etc/udev/rules.d/)
+KERNEL=="hidraw*", ATTRS{idVendor}=="0b05", ATTRS{idProduct}=="19b6", MODE="0660", GROUP="input"

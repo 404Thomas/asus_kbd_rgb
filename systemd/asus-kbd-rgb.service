@@ -1,0 +1,16 @@
+[Unit]
+Description=Restaura a cor/efeito RGB do teclado ASUS no boot
+# Garante que o subsistema USB/HID já esteja pronto antes de aplicar.
+After=multi-user.target systemd-udev-settle.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/asus_kbd_rgb --restore
+# Para modo static/off o processo encerra rápido; mantemos o estado
+# "ativo" no systemd. Para breathe/cycle o processo segue rodando.
+RemainAfterExit=yes
+# Reaplica também ao acordar de suspensão/hibernação, onde o
+# firmware costuma resetar o backlight.
+
+[Install]
+WantedBy=multi-user.target suspend.target hibernate.target hybrid-sleep.target

@@ -1,0 +1,12 @@
+# Binário compilado
+/asus_kbd_rgb
+*.o
+
+# IDEs
+/.idea/
+/.vscode/
+*.iml
+
+# Sistema
+*.swp
+*~
