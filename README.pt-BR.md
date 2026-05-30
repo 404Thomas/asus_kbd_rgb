@@ -50,7 +50,7 @@ sudo apt install build-essential
 ### Compilar e instalar
 
 ```sh
-git clone https://github.com/<seu-usuario>/asus_kbd_rgb.git
+git clone https://github.com/404Thomas/asus_kbd_rgb.git
 cd asus_kbd_rgb
 
 make                 # compila o binário ./asus_kbd_rgb
