@@ -13,15 +13,15 @@ drivers — and implements animated effects (breathe, cycle) in software using
 
 ## Features
 
-- 🎨 **Static color** from any hex value (`RRGGBB`)
-- 🌬️ **Breathe** — smoothly pulses the chosen color (sine curve)
-- 🌈 **Cycle** — sweeps the full HSV spectrum
-- 🔆 **4 brightness levels** and 3 speeds (slow / med / fast)
-- 💾 **Persistence**: the last state is saved and restored at boot and on
+-  **Static color** from any hex value (`RRGGBB`)
+-  **Breathe** — smoothly pulses the chosen color (sine curve)
+-  **Cycle** — sweeps the full HSV spectrum
+-  **4 brightness levels** and 3 speeds (slow / med / fast)
+-  **Persistence**: the last state is saved and restored at boot and on
   resume from suspend (via systemd)
-- 🧰 **Interactive menu** in the terminal
-- 🔌 Runs **without root** via a udev rule
-- 🪶 No dependencies beyond `libc`, `libm` and `pthread`
+-  **Interactive menu** in the terminal
+-  Runs **without root** via a udev rule
+-  No dependencies beyond `libc`, `libm` and `pthread`
 
 ## Compatibility
 
