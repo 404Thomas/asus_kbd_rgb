@@ -13,15 +13,15 @@ efeitos animados (breathe, cycle) por software usando `pthreads`.
 
 ## Recursos
 
-- 🎨 **Cor estática** em qualquer valor hexadecimal (`RRGGBB`)
-- 🌬️ **Breathe** — pulsa suavemente a cor escolhida (curva senoidal)
-- 🌈 **Cycle** — percorre todo o espectro HSV
-- 🔆 **4 níveis de brilho** e 3 velocidades (slow / med / fast)
-- 💾 **Persistência**: o último estado é salvo e restaurado no boot e ao
+-  **Cor estática** em qualquer valor hexadecimal (`RRGGBB`)
+-  **Breathe** — pulsa suavemente a cor escolhida (curva senoidal)
+-  **Cycle** — percorre todo o espectro HSV
+-  **4 níveis de brilho** e 3 velocidades (slow / med / fast)
+-  **Persistência**: o último estado é salvo e restaurado no boot e ao
   acordar da suspensão (via systemd)
-- 🧰 **Menu interativo** no terminal
-- 🔌 Roda **sem root** com uma regra udev
-- 🪶 Sem dependências além de `libc`, `libm` e `pthread`
+-  **Menu interativo** no terminal
+-  Roda **sem root** com uma regra udev
+-  Sem dependências além de `libc`, `libm` e `pthread`
 
 ## Compatibilidade
 
